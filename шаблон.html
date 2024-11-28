@@ -8,31 +8,29 @@
     nav{
       display: flex;
       justify-content: space-around;
-      height: 70px;
-      background-color: rgb(253, 14, 14);
+      height: 140px;
+      background-color: rgba(252, 130, 99, 0.817);
       width: 55%;
       border-radius: 80px;
     }
     button{
       color: brown;
       font-family: '1';
-      background-color: rgb(255, 193, 193);
+      background-color: rgba(255, 184, 154, 0.911);
       width: 100px;
-      height: 30px;
+      height: 100px;
       position: relative;
       top: 20px;
-      border: 3px solid red;
+      border: 0px solid rgba(255, 184, 154, 0.911);
       border-radius: 15px;
     }
     button:hover{
-      top: 17px;
-      width: 100px;
-      height: 35px;
-      background-color: rgb(241, 255, 179);
+      background-color: rgb(255, 242, 189);
+      transform: scale(-1,1);
     }
     .t{
       width: 80%;
-      background-color: rgb(255, 211, 211);
+      background-color: rgba(255, 165, 126, 0.496);
       left: 10%;
       top: 30px;
       position: relative;
@@ -43,32 +41,32 @@
     }
     .t2{
       width: 80%;
-      background-color: rgb(255, 211, 211);
+      background-color: rgba(255, 165, 126, 0.496);
       left: 10%;
       top: 50px;
       position: relative;
       font-size: 21px;
-      height: 480px;
+      height: 420px;
       border-radius: 30px;
 
     }
     .fruit{
       color: brown;
-      font-family: '1';
+      font-family: '2';
       position: relative;
       left: 10%;
       position: relative;
       width: 80%;
-      top: 30px;
+      top: 50px;
     }
-    img{
+    .t img{
       position: relative; 
     }
     H1{
       font-family: '1';
       color: rgb(231, 98, 40);
     }
-    img{
+    .t img{
       height: 200px;
       top: 100px;
       position: relative;
@@ -81,6 +79,10 @@
       font-family: '1';
       src: url(ofont.ru_Raydis.ttf);
     }
+    @font-face {
+      font-family: '2';
+      src: url(ofont.ru_FuturaDemiCTT.ttf);
+    }
     .fr{
       display: flex;
       justify-content: space-around;
@@ -89,15 +91,15 @@
       left: 5%;
     }
     .pp{
-      font-family: '1';
+      font-family: '2';
       color: brown;
-      top: 50px;
+      top: 90px;
       position: relative;
       width: 60%;
     }
     .ttt{
       color: brown;
-      font-family: '1';
+      font-family: '2';
       position: relative;
       left: 10%;
       position: relative;
@@ -110,6 +112,17 @@
     h2{
       color: rgb(220, 92, 56);
     }
+    nav img{
+      width: 50px;
+      height: 50px;
+    }
+    .bottom{
+      top:130px;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-color:  rgba(252, 130, 99, 0.817);
+    }
   </style>
 </head>
 <body>
@@ -119,8 +132,8 @@
 
     <h1>Фрукты</h1>
     <nav>
-      <a href="ябл.html"><button class="">Яблоко</button></a>    <!--кнопки-->
-      <a href="https://foodcity.ru/storage/products/October2018/6XZSr6ddCl6cxfo0UchP.jpg"><button class="">Апельсин</button></a>
+      <a href="ябл.html"><button class=""><img src="apple.png"></button></a>    <!--кнопки-->
+      <a href="https://foodcity.ru/storage/products/October2018/6XZSr6ddCl6cxfo0UchP.jpg"><button class=""><img src="пельсин.png"></button></a>
       <a href="https://frutsnab.ru/wa-data/public/shop/products/46/00/46/images/113/113.750x0.jpg"><button class="">Груша</button></a>
       <a href="https://calorizator.ru/sites/default/files/imagecache/product_512/product/watermelon.jpg"><button class="">Арбуз</button></a>
       <a href="https://megatitan.ru/upload/iblock/dd1/3ou5670kfxpsil0752spas2bktbcw2em.jpg"><button class="">Банан</button></a>
@@ -148,6 +161,8 @@
     </div>
 
   </div>
-  <div class="space"></div>
+  <div class="bottom">
+
+  </div>
 </body>
 </html>
